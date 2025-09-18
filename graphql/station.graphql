@@ -1,0 +1,12 @@
+query { 
+  stations(first: 3, name: "Heidelberg Hauptbahnhof") { 
+    totalCount 
+    elements { 
+      ... on Station { 
+        hafasID 
+        globalID 
+        longName 
+      } 
+    } 
+  } 
+}
