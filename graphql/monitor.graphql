@@ -1,0 +1,27 @@
+query {
+  station(id: "1160") {
+		id
+    hafasID
+    longName
+    journeys(startTime: "2025-08-24T11:39:00Z", first: 3) {
+      elements {
+        ... on Journey {
+          line { 
+						lastJourneyTypes
+						lineGroup { id } 
+						style {
+							primary {
+								hex
+							}
+						}
+					}
+          currentStop: stops(onlyHafasID: "1160") {
+            destinationLabel
+            plannedDeparture { isoString }
+            realtimeDeparture { isoString }
+          }
+        }
+      }
+    }
+  }
+}
