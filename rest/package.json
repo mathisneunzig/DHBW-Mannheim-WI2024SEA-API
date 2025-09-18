@@ -1,0 +1,17 @@
+{
+    "name": "tiny-crud-sqlite",
+    "version": "1.0.0",
+    "description": "Super small Express + SQLite CRUD service for a single entity.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "keywords": ["express", "sqlite", "crud", "tiny"],
+    "license": "MIT",
+    "dependencies": {
+      "better-sqlite3": "^11.5.0",
+      "express": "^4.19.2"
+    }
+  }
+  
