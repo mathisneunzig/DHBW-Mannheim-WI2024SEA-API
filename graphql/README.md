@@ -6,4 +6,4 @@ Auth-Kategorie: Bearer Token
 
 Token: *bekommst du von Mathis*
 
-Prefix: keiner
+Prefix: *leer lassen*
